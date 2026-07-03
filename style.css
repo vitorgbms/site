@@ -317,11 +317,10 @@ body.dark .hamburger span {
     background: linear-gradient(135deg, #2B1B17 0%, #5C3A2E 100%);
     color: var(--branco);
     padding-top: 80px;
-    padding-bottom: 80px;  /* ← ESPAÇO EXTRA EMBAIXO DA IMAGEM */
+    padding-bottom: 80px;
     position: relative;
     overflow: hidden;
 }
-
 /* ===== SOBRE ===== */
 .sobre {
     padding: 100px 0;
