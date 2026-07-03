@@ -308,6 +308,7 @@ body.dark .hamburger span {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
+
 /* ===== HERO ===== */
 .hero {
     min-height: 100vh;
@@ -316,8 +317,16 @@ body.dark .hamburger span {
     background: linear-gradient(135deg, #2B1B17 0%, #5C3A2E 100%);
     color: var(--branco);
     padding-top: 80px;
+    padding-bottom: 80px;  /* ← ESPAÇO EXTRA EMBAIXO DA IMAGEM */
     position: relative;
     overflow: hidden;
+}
+
+/* ===== SOBRE ===== */
+.sobre {
+    padding: 100px 0;
+    margin-top: 20px;  /* ← ESPAÇO ENTRE O HERO E O SOBRE */
+    background: var(--creme);
 }
 
 .hero-container {
