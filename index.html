@@ -1,266 +1,592 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GV Sweet · Brownies Artesanais</title>
-    <meta name="description" content="Brownies artesanais com casquinha perfeita, massa macia e sabores preparados com ingredientes selecionados. Peça o seu pelo WhatsApp." />
-    <meta name="keywords" content="brownie artesanal, brownie gourmet, brownie ninho, brownie nutella, osasco" />
-    <meta property="og:title" content="GV Sweet · Brownies Artesanais" />
-    <meta property="og:description" content="Brownies artesanais feitos para surpreender. Casquinha perfeita e ingredientes selecionados." />
-    <meta property="og:type" content="website" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍫</text></svg>" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="GV Sweet - Brownies artesanais 7x7 com ingredientes selecionados em Osasco-SP. Casquinha crocante, muito recheio e sabores únicos. Peça pelo WhatsApp!">
+    <meta name="keywords" content="brownies artesanais, brownie Osasco, GV Sweet, brownie recheado, delivery brownie, brownie premium, brownie Ninho, brownie Nutella">
+    <meta name="author" content="GV Sweet">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="GV Sweet - Brownies Artesanais Premium">
+    <meta property="og:description" content="Brownies artesanais 7x7 com ingredientes selecionados. Casquinha perfeita, massa macia e sabores incríveis.">
+    <meta property="og:image" content="vibe_images/hero-brownie_1783642528.png">
+    <meta property="og:type" content="website">
+    
+    <title>GV Sweet | Brownies Artesanais Premium - Osasco SP</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="vibe_images/hero-brownie_1783642528.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- ===== NAVBAR ===== -->
-    <nav class="navbar" id="navbar" role="navigation" aria-label="Navegação principal">
-        <div class="container nav-container">
-            <a href="#hero" class="logo" aria-label="GV Sweet - Início">
-                <span class="logo-icon">✦</span>
-                <span class="logo-text">GV <span>Sweet</span></span>
-            </a>
-
-            <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-
-            <ul class="nav-links" id="navLinks" role="menubar">
-                <li role="none"><a href="#hero" role="menuitem">Início</a></li>
-                <li role="none"><a href="#cardapio" role="menuitem">Cardápio</a></li>
-                <li role="none"><a href="#diferenciais" role="menuitem">Diferenciais</a></li>
-                <li role="none"><a href="#avaliacoes" role="menuitem">Avaliações</a></li>
-                <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
-                <li role="none"><a href="#contato" role="menuitem">Contato</a></li>
-            </ul>
-
-            <div class="nav-actions">
-                <button class="btn-theme" id="themeToggle" aria-label="Alternar tema">
-                    <i class="fas fa-moon"></i>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo">GV Sweet</a>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
-                <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20brownies%20GV" class="btn btn-primary btn-sm" id="navCta">
-                    <i class="fab fa-whatsapp"></i> Pedir
-                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#menu" class="nav-link">Cardápio</a></li>
+                    <li><a href="#differentials" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#reviews" class="nav-link">Avaliações</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                    <li>
+                        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20brownies%20GV" 
+                           target="_blank" 
+                           class="btn-order">
+                            <i class="fab fa-whatsapp"></i> Pedir
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="hero" aria-label="Apresentação GV Sweet">
-        <div class="container hero-container">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
             <div class="hero-content">
-                <span class="hero-badge">✦ Premium</span>
-                <h1 class="hero-title" id="heroTitle">Brownies artesanais feitos para surpreender.</h1>
-                <p class="hero-text">Casquinha perfeita por fora, massa macia por dentro e sabores preparados com ingredientes selecionados. Uma experiência que transforma qualquer momento.</p>
-                <div class="hero-buttons">
-                    <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20brownies%20GV" class="btn btn-primary btn-large">
-                        <i class="fab fa-whatsapp"></i> Fazer Pedido
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span id="typingText"></span>
+                    </h1>
+                    <p class="hero-description">
+                        Casquinha perfeita por fora, massa macia por dentro e sabores preparados com ingredientes selecionados. 
+                        Uma experiência que transforma qualquer momento.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20brownies%20GV" 
+                           target="_blank" 
+                           class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i> Fazer Pedido
+                        </a>
+                        <a href="#menu" class="btn btn-secondary">
+                            Ver Cardápio <i class="fas fa-arrow-down"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Floating Cards -->
+                    <div class="floating-cards">
+                        <div class="floating-card">
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (200+)</span>
+                        </div>
+                        <div class="floating-card">
+                            <i class="fas fa-fire"></i>
+                            <span>Quentinho</span>
+                        </div>
+                        <div class="floating-card">
+                            <i class="fas fa-crown"></i>
+                            <span>Premium</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="vibe_images/hero-brownie_1783642528.png" alt="Brownies artesanais GV Sweet">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Conheça</span>
+                <h2 class="section-title">Nossa História</h2>
+            </div>
+            
+            <div class="about-content">
+                <p class="about-text">
+                    A GV Sweet nasceu da paixão por brownies artesanais e do desejo de proporcionar experiências únicas 
+                    aos nossos clientes. Cada brownie é preparado com ingredientes selecionados e muito carinho, 
+                    garantindo aquela casquinha crocante por fora e uma massa macia e úmida por dentro.
+                </p>
+                <p class="about-text">
+                    Com mais de 2 anos de experiência, já conquistamos mais de 500 clientes em Osasco e região, 
+                    sempre mantendo o compromisso com a qualidade e o atendimento personalizado que nos diferencia.
+                </p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">+2</div>
+                        <div class="stat-label">Anos de experiência</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Feito com amor</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">+500</div>
+                        <div class="stat-label">Clientes satisfeitos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Sabores</span>
+                <h2 class="section-title">Nosso Cardápio</h2>
+                <p class="section-description">Brownies 7x7 com sabores irresistíveis</p>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Ninho -->
+                <div class="menu-card">
+                    <div class="menu-icon">
+                        <i class="fas fa-cookie"></i>
+                    </div>
+                    <h3 class="menu-name">Ninho</h3>
+                    <p class="menu-description">Brownie clássico com leite ninho cremoso</p>
+                    <div class="menu-price">R$ 10,00</div>
+                    <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20brownie%20Ninho" 
+                       target="_blank" 
+                       class="btn btn-primary btn-small">
+                        <i class="fab fa-whatsapp"></i> Pedir
                     </a>
-                    <a href="#cardapio" class="btn btn-outline btn-large">Ver Cardápio</a>
                 </div>
-            </div>
-            <div class="hero-visual" aria-hidden="true">
-                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&h=600&fit=crop&crop=center" alt="Brownie artesanal" loading="lazy" />
-                <div class="hero-float-card float-card-1">
-                    <i class="fas fa-star"></i>
-                    <span>4.9</span>
-                    <small>(200+)</small>
+                
+                <!-- Ninho + KitKat -->
+                <div class="menu-card">
+                    <div class="menu-icon">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <h3 class="menu-name">Ninho + KitKat</h3>
+                    <p class="menu-description">Combinação perfeita de leite ninho com KitKat crocante</p>
+                    <div class="menu-price">R$ 11,00</div>
+                    <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20brownie%20Ninho%20%2B%20KitKat" 
+                       target="_blank" 
+                       class="btn btn-primary btn-small">
+                        <i class="fab fa-whatsapp"></i> Pedir
+                    </a>
                 </div>
-                <div class="hero-float-card float-card-2">
-                    <i class="fas fa-clock"></i>
-                    <span>Quentinho</span>
+                
+                <!-- Nutella -->
+                <div class="menu-card">
+                    <div class="menu-icon">
+                        <i class="fas fa-cookie"></i>
+                    </div>
+                    <h3 class="menu-name">Nutella</h3>
+                    <p class="menu-description">Brownie recheado com Nutella cremosa</p>
+                    <div class="menu-price">R$ 13,00</div>
+                    <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20brownie%20de%20Nutella" 
+                       target="_blank" 
+                       class="btn btn-primary btn-small">
+                        <i class="fab fa-whatsapp"></i> Pedir
+                    </a>
                 </div>
-                <div class="hero-float-card float-card-3">
-                    <i class="fas fa-chocolate-bar"></i>
-                    <span>Premium</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SOBRE ===== -->
-    <section class="sobre" id="sobre">
-        <div class="container sobre-container">
-            <div class="sobre-content">
-                <span class="section-tag">Sobre Nós</span>
-                <h2 class="section-title">Nossa <span class="highlight">História</span></h2>
-                <p class="sobre-text">A GV Sweet nasceu da paixão pela confeitaria artesanal e do desejo de criar brownies que fossem muito além do comum. Cada receita é testada e aperfeiçoada até atingir a combinação perfeita.</p>
-                <p class="sobre-text">Trabalhamos com ingredientes selecionados, chocolate de verdade e muito cuidado em cada etapa da produção. Nosso compromisso é entregar qualidade e sabor em cada mordida.</p>
-                <div class="sobre-features">
-                    <div class="sobre-feature"><i class="fas fa-check-circle"></i> Ingredientes Selecionados</div>
-                    <div class="sobre-feature"><i class="fas fa-check-circle"></i> Produção Artesanal</div>
-                    <div class="sobre-feature"><i class="fas fa-check-circle"></i> Qualidade Garantida</div>
-                </div>
-            </div>
-            <div class="sobre-cards">
-                <div class="sobre-card">
-                    <i class="fas fa-award"></i>
-                    <span>+2 anos</span>
-                    <small>de experiência</small>
-                </div>
-                <div class="sobre-card">
-                    <i class="fas fa-heart"></i>
-                    <span>100%</span>
-                    <small>amor em cada receita</small>
-                </div>
-                <div class="sobre-card">
-                    <i class="fas fa-users"></i>
-                    <span>+500</span>
-                    <small>clientes satisfeitos</small>
+                
+                <!-- Ninho + Nutella -->
+                <div class="menu-card featured">
+                    <div class="menu-badge">Mais Vendido</div>
+                    <div class="menu-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="menu-name">Ninho + Nutella</h3>
+                    <p class="menu-description">A combinação dos sonhos: leite ninho com Nutella</p>
+                    <div class="menu-price">R$ 15,00</div>
+                    <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20brownie%20Ninho%20%2B%20Nutella" 
+                       target="_blank" 
+                       class="btn btn-primary btn-small">
+                        <i class="fab fa-whatsapp"></i> Pedir
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== CARDÁPIO ===== -->
-    <section class="cardapio" id="cardapio">
+    <!-- Differentials Section -->
+    <section id="differentials" class="differentials">
         <div class="container">
-            <span class="section-tag">Cardápio</span>
-            <h2 class="section-title">Nossos <span class="highlight">Brownies</span></h2>
-            <p class="section-subtitle">Tamanho 7x7 · Recheios premium · Escolha o seu favorito!</p>
-            <div class="cardapio-grid" id="cardapioGrid"></div>
-        </div>
-    </section>
-
-    <!-- ===== DIFERENCIAIS ===== -->
-    <section class="diferenciais" id="diferenciais">
-        <div class="container">
-            <span class="section-tag">Diferenciais</span>
-            <h2 class="section-title">Por que <span class="highlight">escolher</span> a GV Sweet?</h2>
-            <div class="diferenciais-grid">
-                <div class="dif-card"><i class="fas fa-seedling"></i><h4>Ingredientes Selecionados</h4><p>Chocolate de verdade e ingredientes de qualidade.</p></div>
-                <div class="dif-card"><i class="fas fa-hand-sparkles"></i><h4>Produção Artesanal</h4><p>Cada brownie feito com dedicação e cuidado.</p></div>
-                <div class="dif-card"><i class="fas fa-fill-drip"></i><h4>Muito Recheio</h4><p>Recheio generoso que surpreende a cada mordida.</p></div>
-                <div class="dif-card"><i class="fas fa-cookie-bite"></i><h4>Casquinha Crocante</h4><p>A textura perfeita que todo brownie deve ter.</p></div>
-                <div class="dif-card"><i class="fas fa-clock"></i><h4>Atendimento Ágil</h4><p>Resposta rápida e atendimento personalizado.</p></div>
-                <div class="dif-card"><i class="fas fa-medal"></i><h4>Qualidade Garantida</h4><p>Produzimos com excelência em cada etapa.</p></div>
+            <div class="section-header">
+                <span class="section-subtitle">Por que nos escolher</span>
+                <h2 class="section-title">Nossos Diferenciais</h2>
+            </div>
+            
+            <div class="differentials-grid">
+                <div class="differential-card">
+                    <div class="differential-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Ingredientes Selecionados</h3>
+                    <p>Utilizamos apenas ingredientes de alta qualidade para garantir o melhor sabor</p>
+                </div>
+                
+                <div class="differential-card">
+                    <div class="differential-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Produção Artesanal</h3>
+                    <p>Cada brownie é feito à mão com atenção especial aos detalhes</p>
+                </div>
+                
+                <div class="differential-card">
+                    <div class="differential-icon">
+                        <i class="fas fa-fill-drip"></i>
+                    </div>
+                    <h3>Muito Recheio</h3>
+                    <p>Generosas porções de recheio em cada brownie para uma experiência única</p>
+                </div>
+                
+                <div class="differential-card">
+                    <div class="differential-icon">
+                        <i class="fas fa-cookie"></i>
+                    </div>
+                    <h3>Casquinha Crocante</h3>
+                    <p>Aquela casquinha perfeita que todo brownie deve ter</p>
+                </div>
+                
+                <div class="differential-card">
+                    <div class="differential-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Atendimento Ágil</h3>
+                    <p>Resposta rápida e atendimento personalizado pelo WhatsApp</p>
+                </div>
+                
+                <div class="differential-card">
+                    <div class="differential-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Qualidade Garantida</h3>
+                    <p>Compromisso com a qualidade em cada pedido entregue</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== AVALIAÇÕES ===== -->
-    <section class="avaliacoes" id="avaliacoes">
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
         <div class="container">
-            <span class="section-tag">Avaliações</span>
-            <h2 class="section-title">O que nossos <span class="highlight">clientes</span> dizem</h2>
-            <div class="carrossel-wrapper">
-                <div class="carrossel" id="carrossel"></div>
-                <button class="carrossel-btn prev" id="carrosselPrev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
-                <button class="carrossel-btn next" id="carrosselNext" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
+            <div class="section-header">
+                <span class="section-subtitle">Depoimentos</span>
+                <h2 class="section-title">O Que Dizem Nossos Clientes</h2>
+            </div>
+            
+            <div class="reviews-carousel">
+                <div class="reviews-track" id="reviewsTrack">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Melhor brownie que já comi! A casquinha é perfeita e o recheio de Ninho é maravilhoso. Super recomendo!"</p>
+                        <div class="review-author">
+                            <strong>Amanda Silva</strong>
+                            <span>Cliente desde 2024</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Entrega super rápida e o brownie chegou quentinho. O sabor Ninho + Nutella é divino!"</p>
+                        <div class="review-author">
+                            <strong>Lucas Santos</strong>
+                            <span>Cliente frequente</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Atendimento excelente! Sempre atenciosos e o brownie é simplesmente o melhor da região."</p>
+                        <div class="review-author">
+                            <strong>Juliana Costa</strong>
+                            <span>Cliente desde 2023</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 4 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Pedi para uma festa e todos amaram! Qualidade incrível e sabor incomparável."</p>
+                        <div class="review-author">
+                            <strong>Rafael Oliveira</strong>
+                            <span>Cliente desde 2024</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 5 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"O brownie com KitKat é viciante! Peço toda semana. Nunca me decepcionei."</p>
+                        <div class="review-author">
+                            <strong>Camila Rodrigues</strong>
+                            <span>Cliente VIP</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 6 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Qualidade premium de verdade! Dá pra sentir que é feito com ingredientes bons. Super indico!"</p>
+                        <div class="review-author">
+                            <strong>Fernando Lima</strong>
+                            <span>Cliente desde 2023</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== FAQ ===== -->
-    <section class="faq" id="faq">
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
         <div class="container">
-            <span class="section-tag">FAQ</span>
-            <h2 class="section-title">Perguntas <span class="highlight">frequentes</span></h2>
+            <div class="section-header">
+                <span class="section-subtitle">Dúvidas</span>
+                <h2 class="section-title">Perguntas Frequentes</h2>
+            </div>
+            
             <div class="faq-list">
                 <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">Como faço meu pedido? <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer"><p>Os pedidos são feitos exclusivamente pelo WhatsApp. Clique em "Fazer Pedido" em qualquer botão do site e será redirecionado para nossa conversa.</p></div>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Como faço meu pedido?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Fazer seu pedido é muito fácil! Basta clicar em qualquer botão "Pedir" do nosso site ou entrar em contato pelo WhatsApp (11) 95918-3946. Nosso atendimento é rápido e personalizado.</p>
+                    </div>
                 </div>
+                
                 <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">Qual o prazo de entrega? <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer"><p>As entregas são feitas via 99Entrega, geralmente no mesmo dia ou em até 1 dia útil, dependendo da região.</p></div>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Qual o prazo de entrega?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O prazo de entrega varia de acordo com a disponibilidade e localização. Trabalhamos com agendamento prévio para garantir que seu brownie seja preparado fresquinho. Entre em contato para verificar a disponibilidade para sua região.</p>
+                    </div>
                 </div>
+                
                 <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">Aceita Pix? <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer"><p>Sim! Aceitamos Pix, dinheiro e cartão (via link de pagamento).</p></div>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Aceita Pix?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Aceitamos Pix e dinheiro como formas de pagamento. O pagamento via Pix é rápido e prático, facilitando ainda mais seu pedido.</p>
+                    </div>
                 </div>
+                
                 <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">Fazem encomendas para festas? <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer"><p>Sim! Fazemos encomendas para aniversários, eventos e festas. Entre em contato com antecedência pelo WhatsApp.</p></div>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Fazem encomendas para festas?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Fazemos encomendas para festas, eventos e ocasiões especiais. Entre em contato pelo WhatsApp com antecedência para discutirmos quantidades, sabores e prazos. Faremos o possível para atender sua necessidade!</p>
+                    </div>
                 </div>
+                
                 <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">Posso retirar pessoalmente? <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer"><p>Sim, a retirada é em Osasco mediante agendamento. Combinamos o horário pelo WhatsApp.</p></div>
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Posso retirar pessoalmente?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Oferecemos a opção de retirada em Osasco mediante agendamento prévio. Entre em contato pelo WhatsApp para combinar o melhor horário para você.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== CONTATO ===== -->
-    <section class="contato" id="contato">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="container">
-            <span class="section-tag">Contato</span>
-            <h2 class="section-title">Entrega e <span class="highlight">Atendimento</span></h2>
-            <div class="contato-grid">
-                <div class="contato-card"><i class="fas fa-map-pin"></i><h4>Localização</h4><p>Osasco – SP</p></div>
-                <div class="contato-card"><i class="fas fa-truck"></i><h4>Entrega</h4><p>99Entrega</p></div>
-                <div class="contato-card"><i class="fas fa-store"></i><h4>Retirada</h4><p>Em Osasco mediante agendamento</p></div>
-                <div class="contato-card"><i class="fas fa-credit-card"></i><h4>Pagamento</h4><p>Pix e dinheiro</p></div>
-                <div class="contato-card"><i class="fab fa-whatsapp"></i><h4>Pedidos</h4><p>Exclusivamente pelo WhatsApp</p></div>
+            <div class="section-header">
+                <span class="section-subtitle">Fale Conosco</span>
+                <h2 class="section-title">Contato e Entrega</h2>
             </div>
-            <div class="contato-cta">
-                <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20brownies%20GV" class="btn btn-primary btn-large">
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Localização</h3>
+                    <p>Osasco – SP</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Entrega</h3>
+                    <p>99Entrega (por conta do cliente)</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Retirada</h3>
+                    <p>Em Osasco mediante agendamento</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Pagamento</h3>
+                    <p>Pix e dinheiro</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>Pedidos</h3>
+                    <p>Exclusivamente pelo WhatsApp</p>
+                </div>
+            </div>
+            
+            <div class="contact-cta">
+                <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20brownies%20GV" 
+                   target="_blank" 
+                   class="btn btn-primary btn-large">
                     <i class="fab fa-whatsapp"></i> Fazer Pedido Agora
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- ===== CTA FINAL ===== -->
-    <section class="cta-final">
-        <div class="container cta-container">
-            <h2 class="cta-title">Seu próximo brownie favorito está a poucos cliques de distância.</h2>
-            <p class="cta-text">Faça seu pedido agora mesmo e descubra por que nossos brownies conquistam tantos clientes.</p>
-            <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20brownies%20GV" class="btn btn-primary btn-large">
-                <i class="fab fa-whatsapp"></i> Pedir pelo WhatsApp
-            </a>
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Seu próximo brownie favorito está a poucos cliques de distância.</h2>
+                <p class="cta-text">Faça seu pedido agora mesmo e descubra por que nossos brownies conquistam tantos clientes.</p>
+                <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20brownies%20GV" 
+                   target="_blank" 
+                   class="btn btn-primary btn-large">
+                    <i class="fab fa-whatsapp"></i> Pedir pelo WhatsApp
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- ===== FOOTER ===== -->
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <a href="#hero" class="logo"><span class="logo-icon">✦</span><span class="logo-text">GV <span>Sweet</span></span></a>
-                <p>Brownies artesanais feitos com amor, chocolate de verdade e ingredientes selecionados.</p>
-                <div class="footer-social">
-                    <a href="https://instagram.com/g.v.sweet" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20brownies%20GV" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:contato@gvsweet.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">GV Sweet</h3>
+                    <p class="footer-description">Brownies artesanais feitos com amor e ingredientes selecionados em Osasco-SP.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#menu">Cardápio</a></li>
+                        <li><a href="#differentials">Diferenciais</a></li>
+                        <li><a href="#reviews">Avaliações</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/g.v.sweet" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20brownies%20GV" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:contato@gvsweet.com" aria-label="E-mail">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Horário de Atendimento</h4>
+                    <p class="footer-hours">Seg–Sáb: 10h–20h</p>
                 </div>
             </div>
-            <div class="footer-links">
-                <h4>Links Rápidos</h4>
-                <ul>
-                    <li><a href="#hero">Início</a></li>
-                    <li><a href="#cardapio">Cardápio</a></li>
-                    <li><a href="#diferenciais">Diferenciais</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 GV Sweet. Todos os direitos reservados.</p>
             </div>
-            <div class="footer-contact">
-                <h4>Contato</h4>
-                <p><i class="fab fa-whatsapp"></i> (11) 95918-3946</p>
-                <p><i class="fab fa-instagram"></i> @g.v.sweet</p>
-                <p><i class="fas fa-map-pin"></i> Osasco - SP</p>
-                <p><i class="fas fa-clock"></i> Seg–Sáb: 10h–20h</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 GV Sweet · Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- ===== WHATSAPP FLOAT ===== -->
-    <a href="https://wa.me/5511959183946?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20brownies%20GV" class="whatsapp-float" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- ===== BACK TO TOP ===== -->
+    <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
-        <i class="fas fa-chevron-up"></i>
+        <i class="fas fa-arrow-up"></i>
     </button>
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
