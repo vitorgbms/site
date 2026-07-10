@@ -346,3 +346,4 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('%cSite desenvolvido com carinho para os melhores brownies de Osasco!', 'color: #5C3A2E; font-size: 14px;');
     
 });
+
